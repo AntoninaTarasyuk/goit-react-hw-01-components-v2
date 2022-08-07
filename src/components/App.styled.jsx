@@ -6,4 +6,5 @@ export const Section = styled.section`
 export const Container = styled.div`
   width: 320px;
   margin: 0 auto;
+  padding: 0 4px;
 `

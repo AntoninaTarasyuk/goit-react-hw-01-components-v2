@@ -1,7 +1,9 @@
 import styled from "@emotion/styled";
 
 export const Table = styled.table`
+  width: 100%;
   text-align: center;
+  border-spacing: 1px;
   border: 1px solid #dcdcdc;
   border-radius: 5px;
   overflow: hidden;
@@ -11,7 +13,7 @@ export const THead = styled.thead`
   background-color: #00bcd5;
 `
 export const THeadItem = styled.th`
-  padding: 15px;
+  padding: 14px;
   font-size: 14px;
   color: #ffffff;
   text-transform: uppercase;
@@ -20,7 +22,7 @@ export const TBody = styled.tbody`
   :nth-child(odd) {background-color: #f4f4f4;}
 `
 export const TBodyItem = styled.td`
-  padding: 15px;
+  padding: 14px;
   color: #646464;
   text-transform: capitalize;
 `

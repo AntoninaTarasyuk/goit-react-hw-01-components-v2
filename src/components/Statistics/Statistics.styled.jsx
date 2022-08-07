@@ -23,7 +23,7 @@ export const SItem = styled.li`
   display: flex;
   flex-direction: column;
   gap: 8px;
-  padding: 10px 0;
+  padding: 12px 0;
   width: 100%;
 `
 export const SLabel = styled.span`

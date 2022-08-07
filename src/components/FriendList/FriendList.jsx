@@ -5,8 +5,7 @@ export default function FriendList({ items }) {
   return <FList>
     {items.map(({ id, isOnline, avatar, name }) => (
       <FItem key={id}>
-        <FStatus
-        style={{ backgroundColor: isOnline ? 'green' : 'red' }}></FStatus>
+        <FStatus style={{ backgroundColor: isOnline ? 'green' : 'red' }}></FStatus>
         <img src={avatar} alt={name} width="48" />
         <FName>{name}</FName>
       </FItem>

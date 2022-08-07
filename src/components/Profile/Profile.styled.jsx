@@ -8,7 +8,7 @@ export const PWrap = styled.div`
 `
 export const PDescription = styled.div`
   text-align: center;
-  margin: 20px 0;
+  padding: 28px 0;
 `
 export const PAvatar = styled.img`
   display: inline-block;
@@ -20,7 +20,7 @@ export const PName = styled.p`
   font-size: 18px;
 `
 export const PInfo = styled.p`
-  margin: 10px 0 0 0;
+  margin: 8px 0 0 0;
   font-size: 16px;
   color: #7f8792;
 `
@@ -40,7 +40,7 @@ export const PStatsItem = styled.li`
   align-items: center;
   gap: 8px;
   width: 100%;
-  padding: 15px 0;
+  padding: 20px 0;
   :not(:last-child) {border-right: 1px solid rgb(220, 220, 220);}
 `
 export const PLabel = styled.span` {
