@@ -6,7 +6,7 @@ export default function Statistics({ title, stats }) {
     {title && <STitle>{title}</STitle>}
     <SList>
       {stats.map(({ id, label, percentage }) => (
-        <SItem key={id} style={{backgroundColor: getRandomColor()}}>
+        <SItem key={id}>
           <SLabel>{label}</SLabel>
           <SPercentage>{percentage}%</SPercentage>
         </SItem>
@@ -24,8 +24,4 @@ Statistics.propTypes = {
       percentage: PropTypes.number.isRequired,
     })
   ),
-};
-
-function getRandomColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, 0)}`;
 };

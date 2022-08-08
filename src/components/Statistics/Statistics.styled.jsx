@@ -1,5 +1,9 @@
 import styled from "@emotion/styled";
 
+function getRandomColor() {
+  return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, 0)}`;
+};
+
 export const SWrap = styled.div`
   border: 1px solid rgb(220, 220, 220);
   border-radius: 5px;
@@ -19,7 +23,8 @@ export const SList = styled.ul`
   padding: 0;
   list-style: none;
 `
-export const SItem = styled.li` 
+export const SItem = styled.li`
+  background-color: ${getRandomColor};
   display: flex;
   flex-direction: column;
   gap: 8px;
