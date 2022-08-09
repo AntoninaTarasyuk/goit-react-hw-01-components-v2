@@ -1,25 +1,17 @@
 import { PropTypes } from 'prop-types';
-import {FList, FItem, FName, FStatus} from './FriendList.styled';
+import { FList, FItem } from './FriendList.styled';
+import FriendListItem from '../FriendListItem/FriendListItem';
 
-export default function FriendList({ items }) {
+export default function FriendList({ friends }) {
   return <FList>
-    {items.map(({ id, isOnline, avatar, name }) => (
-      <FItem key={id}>
-        <FStatus style={{ backgroundColor: isOnline ? 'green' : 'red' }}></FStatus>
-        <img src={avatar} alt={name} width="48" />
-        <FName>{name}</FName>
+    {friends.map(friend => (
+      <FItem key={friend.id} >
+        <FriendListItem friend={friend}/>
       </FItem>
     ))}
   </FList>
 }
 
 FriendList.propTypes = {
-  items: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      isOnline: PropTypes.bool.isRequired,
-      avatar: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-    })
-  ),
+  friends: PropTypes.arrayOf(PropTypes.object).isRequired,
 };

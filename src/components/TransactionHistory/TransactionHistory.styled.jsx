@@ -19,7 +19,7 @@ export const THeadItem = styled.th`
   text-transform: uppercase;
 `
 export const TBody = styled.tbody`
-  :nth-child(odd) {background-color: #f4f4f4;}
+  :nth-of-type(odd) {background-color: #f4f4f4;}
 `
 export const TBodyItem = styled.td`
   padding: 14px;

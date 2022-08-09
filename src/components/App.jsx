@@ -1,4 +1,4 @@
-import {Section, Container} from './App.styled'
+import { Section, Container } from './App.styled'
 
 import user from '../data/user';
 import statsData from '../data/statsData';
@@ -12,7 +12,7 @@ import TransactionsTable from 'components/TransactionHistory/TransactionHistory'
 
 export default function App() {
   return (
-    <div>
+    <>
       <Section>
         <Container>
           <Profile
@@ -31,7 +31,7 @@ export default function App() {
       </Section>
       <Section>
         <Container>
-          <FriendList items={friends} />
+          <FriendList friends={friends} />
         </Container>
       </Section>
       <Section>
@@ -39,6 +39,6 @@ export default function App() {
           <TransactionsTable items={transactions} />
         </Container>
       </Section>
-    </div>
+    </>
   );
 }

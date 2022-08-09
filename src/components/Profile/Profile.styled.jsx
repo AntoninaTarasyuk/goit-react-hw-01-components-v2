@@ -16,11 +16,11 @@ export const PAvatar = styled.img`
   height: 200px;
 `
 export const PName = styled.p`
-  margin: 20px 0 0 0;
+  margin-top: 20px;
   font-size: 18px;
 `
 export const PInfo = styled.p`
-  margin: 8px 0 0 0;
+  margin-top: 8px;
   font-size: 16px;
   color: #7f8792;
 `
@@ -28,9 +28,6 @@ export const PInfo = styled.p`
 export const PStats = styled.ul`
   display: flex;
   align-items: center;
-  margin: 0;
-  padding: 0;
-  list-style: none;
   background-color: #f4f9fe;
   border-top: 1px solid #dcdcdc;
 `
@@ -41,7 +38,7 @@ export const PStatsItem = styled.li`
   gap: 8px;
   width: 100%;
   padding: 20px 0;
-  :not(:last-child) {border-right: 1px solid rgb(220, 220, 220);}
+  :not(:last-of-type) {border-right: 1px solid rgb(220, 220, 220);}
 `
 export const PLabel = styled.span` {
   color: #7f8792;

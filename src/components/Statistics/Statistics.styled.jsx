@@ -19,9 +19,6 @@ export const STitle = styled.h2`
 `
 export const SList = styled.ul`
   display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 `
 export const SItem = styled.li`
   background-color: ${getRandomColor};
